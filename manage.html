@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage - Bot Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Bot Dashboard</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="stats.html">Stats</a></li>
+                <li><a href="manage.html">Manage</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="manage">
+            <h2>Manage Levels</h2>
+            <form id="manageForm">
+                <input type="text" placeholder="User ID" required>
+                <select>
+                    <option value="exp">Add EXP</option>
+                    <option value="level">Add Level</option>
+                </select>
+                <input type="number" placeholder="Amount" required>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+            <div id="userList"></div>
+        </section>
+    </main>
+    <script src="manage.js"></script>
+</body>
+</html>
